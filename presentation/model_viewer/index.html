@@ -19,7 +19,7 @@
   </head>
 <body>
 
-  <h1>Hello, 3D project</h1>
+  
 
 
     <!-- Use it like any other HTML element -->    
@@ -33,16 +33,30 @@ src="../models/presentation_3Dprint_v7.glb"
  scale="5 5 5"
  camera-controls touch-action="pan-y"></model-viewer> -->
 
- <div class="demo" style="background: linear-gradient(#ffffff, #ada996); overflow-x: hidden;">
-    <!--<span style="position: absolute; text-align: center; font-size: 100px; line-height: 100px; left: 50%; transform: translateX(-50%);">Background<br>is visible<br>through<br>transparent<br>objects.</span>-->
-    <model-viewer camera-controls touch-action="pan-y" 
-    src="../models/presentation_3Dprint_v7.glb" 
-    shadow-intensity="1" 
-    scale="3 3 3"
-    tone-mapping="neutral" ar alt="3D Printer" 
-    style="background-color: unset;">
-  </model-viewer>
+ <div class="my-5">
+  <div class="p-5 text-center bg-body-tertiary">
+    <div class="container py-5">
+      <h1 class="text-body-emphasis">Full-width jumbotron</h1>
+
+      
+      <div class="demo" style="background: linear-gradient(#ffffff, #8b8b8b); overflow-x: hidden;">
+        <!--<span style="position: absolute; text-align: center; font-size: 100px; line-height: 100px; left: 50%; transform: translateX(-50%);">Background<br>is visible<br>through<br>transparent<br>objects.</span>-->
+        <model-viewer camera-controls touch-action="pan-y" 
+        src="../models/presentation_3Dprint_v7.glb" 
+        shadow-intensity="1" 
+        scale="3 3 3"
+        tone-mapping="neutral" ar alt="3D Printer" 
+        style="background-color: unset;">
+      </model-viewer>
+      </div>
+
+
+    </div>
   </div>
+</div>
+
+
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
   integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
