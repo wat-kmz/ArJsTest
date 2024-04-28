@@ -5,14 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Import the component -->
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
-    <script>
-        function getBrowserWidth() {
-        return window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-        }
-        function getBrowserHeight() {
-        return window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
-        }
-    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="../styles/examples.css" rel="stylesheet" />
+    <link type="text/css" href="../styles/docs.css" rel="stylesheet" />
+
     <title>Document</title>
 </head>
 <body>
@@ -36,7 +32,7 @@ src="../models/presentation_3Dprint_v7.glb"
     shadow-intensity="1" 
     scale="5 5 5"
     tone-mapping="neutral" ar alt="3D Printer" 
-    style="background-color: unset; width: getBrowserWidth(); height: getBrowserHeight();"></model-viewer>
+    style="background-color: unset;></model-viewer>
   </div>
 
 </body>
