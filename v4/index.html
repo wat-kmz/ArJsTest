@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Презентация проекта 3D принтера</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab">
+    <link rel="stylesheet" href="assets/css/custom-code.css">
+    <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <header style="margin-top: 60px;">
+                    <nav class="navbar navbar-light navbar-expand-md fixed-top bg-dark navigation-clean" style="height: 50px;">
+                        <div class="container"><a class="navbar-brand" style="color: #dddddd;margin-right: 16px;margin-bottom: 0px;padding-bottom: 5px;letter-spacing: 1px;margin-top: 0px;" href="#"><img style="width: 40px;" src="assets/img/two-red.svg">&nbsp;KMZ Additive Technologes</a>
+                            <button
+                                data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                                <div class="collapse navbar-collapse" id="navcol-1" style="color: #dddddd;">
+                                    <ul class="nav navbar-nav ml-auto">
+                                        <li class="nav-item" role="presentation"><a class="nav-link" href="#banner1">3D модел</a></li>
+                                        <li class="nav-item" role="presentation"><a class="nav-link" href="#banner2">Что внутри</a></li>
+                                        <li class="nav-item" role="presentation"><a class="nav-link" href="#banner3">Как это работает</a></li>
+                                    </ul>
+                                </div>
+                        </div>
+                    </nav>
+                </header>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col frame-view text-center"><div>
+    <p><iframe class="wh-frame" allowfullscreen scrolling="no" src="https://kmz.arcamera.ru/example_3d_notadgoogle/"></iframe></p>
+</div>
+
+
+<!-- <div>
+    <iframe id="iframe" allowfullscreen scrolling="no" src="https://kmz.arcamera.ru/example_3d_notadgoogle/" height="700px" width="600px">
+    </iframe>
+</div> -->
+                <h3 id="banner1" class="text-light bg-dark">3D Модель</h3>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col frame-view text-center"><div>
+    <p><iframe class="wh-frame" allowfullscreen scrolling="no" src="https://kmz.arcamera.ru/example_3d_notadgoogle/"></iframe></p>
+</div>
+
+
+<!-- <div>
+    <iframe id="iframe" allowfullscreen scrolling="no" src="https://kmz.arcamera.ru/example_3d_notadgoogle/" height="700px" width="600px">
+    </iframe>
+</div> -->
+                <h3 id="banner2" class="text-light bg-dark">Внутреннее содержание</h3>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col frame-view text-center"><div>
+    <p><iframe class="wh-frame" allowfullscreen scrolling="no" src="https://kmz.arcamera.ru/example_3d_notadgoogle/"></iframe></p>
+</div>
+
+
+<!-- <div>
+    <iframe id="iframe" allowfullscreen scrolling="no" src="https://kmz.arcamera.ru/example_3d_notadgoogle/" height="700px" width="600px">
+    </iframe>
+</div> -->
+                <h3 class="text-light bg-dark" href="#banner1">Процесс работы</h3>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div><script>
+const headerH = document.querySelector('.header').getBoundingClientRect().height; 
+// Если  header имеет position: fixed; то берём его высоту, чтобы скролл не перекрывал элемент на конец анимации. Если header не фиксированный, то можно его не использовать. (1)
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+
+    e.preventDefault();
+
+    let currentHref    = this.getAttribute('href'),
+        currentAnchor  = document.getElementById(currentHref.substring(1)),
+        currentAnchorT = currentAnchor.getBoundingClientRect().top;
+
+    window.scrollTo({
+      top: currentAnchorT - headerH + window.scrollY, // headerH не обязателен (1)
+      behavior: 'smooth'
+    });
+
+  });
+});
+</script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
