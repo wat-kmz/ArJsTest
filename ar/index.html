@@ -1,6 +1,11 @@
 <!doctype html>
 <html>
     <head>
+    <title>&lt;model-viewer&gt; template</title>
+    <meta charset="utf-8">
+    <meta name="description" content="&lt;model-viewer&gt; template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="./styles.css" rel="stylesheet"/>
         <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
         <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
         <script src="https://raw.githack.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
@@ -21,8 +26,21 @@
             <a-assets>
                 <a-asset-item
                     id="animated-asset"
-                    src="assets/asset.glb"
-                ></a-asset-item>
+                    <!-- src="assets/asset.glb" -->
+                >
+                <model-viewer src="PresentPrint_v4_8.glb" 
+                ar ar-modes="webxr scene-viewer quick-look" 
+                camera-controls poster="poster.webp" 
+                shadow-intensity="1" 
+                environment-image="aircraft_workshop_01_1k.hdr" 
+                exposure="1.5" 
+                autoplay>
+                <div id="ar-prompt">
+                    <img src="ar_hand_prompt.png">
+                </div>
+                </model-viewer>
+            
+            </a-asset-item>
             </a-assets>
 
             <a-marker
@@ -47,5 +65,8 @@
 
             <a-entity camera></a-entity>
         </a-scene>
+        <script src="script.js"></script>
+    <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
     </body>
 </html>
