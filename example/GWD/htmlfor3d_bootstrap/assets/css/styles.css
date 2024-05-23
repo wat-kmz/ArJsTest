@@ -1,0 +1,16 @@
+@media (min-width: 992px) {
+  .navbar-light .navbar-brand {
+    /*font-size: 20;*/
+  }
+}
+
+body {
+  background-color: #333333;
+  font-family: Roboto, sans-serif;
+}
+
+.frame-view {
+  padding: 20px;
+  padding-bottom: 0px;
+}
+
