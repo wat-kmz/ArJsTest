@@ -1,0 +1,39 @@
+.section-heading .section-heading-lower {
+  display: block;
+  /*font-size: 3rem;*/
+  /*font-weight: 100;*/
+  --min: 12px;
+  --max: 48px;
+  --scale: 15vw;
+  font-size: clamp(var(--min), var(--scale), var(--max));
+}
+
+.section-heading .section-heading-upper {
+  display: block;
+  /*font-size: 1rem;*/
+  /*font-weight: 800;*/
+  --min: 8px;
+  --max: 12px;
+  --scale: 5vw;
+  font-size: clamp(var(--min), var(--scale), var(--max));
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif;
+  /*font-size: 1rem;*/
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+  --min: 8px;
+  --max: 16px;
+  --scale: 5vw;
+  font-size: clamp(var(--min), var(--scale), var(--max));
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
