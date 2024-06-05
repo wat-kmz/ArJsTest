@@ -6,6 +6,7 @@
   --max: 3rem;
   --scale: 2.5vw;
   font-size: clamp(var(--min), var(--scale), var(--max));
+  -moz-font-size: clamp(1.2rem, 2.5vw, 3rem);
 }
 
 .section-heading .section-heading-upper {
@@ -16,6 +17,7 @@
   --max: 1rem;
   --scale: 2.5vw;
   font-size: clamp(var(--min), var(--scale), var(--max));
+  -moz-font-size: clamp(0.6rem, 2.5vw, 2.5rem);
 }
 
 html {
